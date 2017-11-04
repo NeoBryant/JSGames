@@ -1,0 +1,232 @@
+body {
+    text-align: center;
+}
+div#introduction {
+	font-size: 25px;
+	margin-bottom: 0px; 
+}
+
+div#attention {
+	height: 50px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+
+	font-size: 25px;
+}
+
+div#maze {
+    position: relative;
+
+    width: 470px;
+    height: 280px;
+    margin: auto;
+
+    cursor: pointer;
+
+}
+
+div#top_wall {
+    top: 0;
+
+    width: 468px;
+    height: 50px;
+}
+
+div#top_wall:hover {
+    top: 0;
+
+    width: 468px;
+    height: 50px;
+
+    background-color: red;
+}
+
+
+div#left_wall {
+    top: 50px;
+    left: 0;
+
+    width: 145px;
+    height: 145px;
+
+    border-top: 0;
+}
+
+div#left_wall:hover {
+    top: 50px;
+    left: 0;
+
+    width: 145px;
+    height: 145px;
+
+    border-top: 0;
+
+    background-color: red;
+}
+
+div#right_wall {
+    top: 50px;
+    right: 0;
+
+    width: 145px;
+    height: 145px;
+
+    border-top: 0;
+}
+
+div#right_wall:hover {
+    top: 50px;
+    right: 0;
+
+    width: 145px;
+    height: 145px;
+
+    border-top: 0;
+
+    background-color: red;
+}
+
+
+div#center_wall {
+    bottom: 50px;
+    left: 185px;
+
+    width: 100px;
+    height: 145px;
+
+    border-bottom: 0;
+}
+
+div#center_wall:hover {
+    bottom: 50px;
+    left: 185px;
+
+    width: 100px;
+    height: 145px;
+
+    border-bottom: 0;
+
+    background-color: red;
+}
+
+
+div#bottom_wall {
+    bottom: 0;
+
+    width: 468px;
+    height: 50px;
+}
+
+div#bottom_wall:hover {
+    bottom: 0;
+
+    width: 468px;
+    height: 50px;
+
+    background-color: red;
+}
+
+div.wall {
+    position: absolute;
+
+    border: 1px black solid;
+    background-color: #eee;
+
+    cursor: default;
+}
+
+div#start_grid {
+    font-size: 20px;
+
+    position: absolute;
+    bottom: 53px;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+
+    cursor: pointer;
+
+    border: 1px black solid;
+    background-color: #00ff84;
+}
+
+div#end_grid {
+    font-size: 20px;
+
+    position: absolute;
+    right: 0;
+    bottom: 53px;
+
+    width: 28px;
+    height: 28px;
+
+    cursor: pointer;
+
+    border: 1px black solid;
+    background-color: #9272ff;
+}
+
+div#example_wall {
+
+	width: 100px;
+	height: 25px;
+
+	position: relative;
+
+	margin: auto;
+}
+
+div#cheat1 {
+	height: 30px;
+	width: 120px;
+	
+    left: 30px;
+    bottom: 53px;	
+}
+
+div#cheat2 {
+	height: 150px;
+	width: 36px;
+	
+    left: 148px;
+    bottom: 53px;	
+}
+
+div#cheat3 {
+	height: 30px;
+	width: 174px;
+	
+    left: 148px;
+    top: 53px;	
+}
+
+div#cheat4 {
+	height: 150px;
+	width: 35px;
+	
+    right: 148px;
+    bottom: 53px;	
+}
+
+div#cheat5 {
+	height: 30px;
+	width: 120px;
+	
+    right: 30px;
+    bottom: 53px;
+}
+div.cheat {
+	position: absolute;
+	background-color: white;
+}
+
+.intro {
+    width: 580px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+

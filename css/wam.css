@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+}
+
+div#information {
+    position: relative;
+
+    width: 300px;
+    height: 55px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+div#switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#time {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#inputTime {
+    width: 30px;
+}
+
+div#status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+div#score {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#inputScore {
+    width: 30px;
+}
+
+div#map {
+    position: relative;
+
+    width: 300px;
+    height: 190px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+hr {
+    width: 290px;
+}
+
+.botton {
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+div#introductions {
+    width: 700px;
+    margin: auto;
+
+    text-align: left;
+}

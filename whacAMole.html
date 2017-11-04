@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Whac-a-mole</title>
+	<link rel="stylesheet" href="css/wam.css">
+		<script type="text/javascript" src="js/wam.js" > </script>	
+</head>
+<body>
+	<h1>Whac-a-mole</h1>
+	<p>Test your skill. How many noxes(moles) can you check(hit) in 30 seconds?</p>
+	<div id="information">
+		<div id="switch">
+			<button type = "button" onclick="control()"> Start Game|Stop Game </button>
+		</div>	
+		<div id="time">
+			Time: <input type="text" id="inputTime" value="30">
+		</div>
+		<div id="status">
+			<input type="text" id="inputStatus" value="Game Over">
+		</div>
+		<div id="score">
+			Score: <input type="text" id="inputScore" value="0">
+		</div>
+	</div>
+	<hr>
+	<div id="map">
+			<div>
+				<input type="radio" name="botton" class="botton" onclick="process(this)" />
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+			</div>
+			<div>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>				
+			</div>
+			<div>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>				
+			</div>
+			<div>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+			</div>
+			<div>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+			</div>
+			<div>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+				<input type="radio" name="botton" class="botton" onclick="process(this)"/>
+			</div>			
+	</div>
+	<hr>
+	<div id="introductions">
+		<h4>Introductions:</h4>
+		<ol>
+			<li>click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+			<li>1 point per hit, minus 1 point per miss.</li>
+		</ol>
+	</div>
+</body>
+</html>

@@ -4,9 +4,32 @@
 	<meta charset="UTF-8">
 	<title>The Amazing Mouse Maze</title>
 	<link rel="stylesheet" href="css/tamm.css">
-	<script src="js/tamm.js"></script>
+		<script type="text/javascript" src="js/tamm.js" > </script>
 </head>
 <body>
-	
+	<h1>The Amazing Mouse Maze!</h1>
+	<div id="introduction">
+		<p>Move your mouse over the "S" to begin.</p>
+	</div>
+	<div id="attention">
+		<p id="attention_words" name="att"></p>
+	</div>
+	<div id="maze" onmouseout="outMaze()">
+		<div id="top_wall" class="wall" onmouseover="intoWall()" onmouseout="outWall()"></div>
+		<div id="left_wall" class="wall" onmouseover="intoWall()" onmouseout="outWall()"></div>
+		<div id="right_wall" class="wall" onmouseover="intoWall()" onmouseout="outWall()"></div>
+		<div id="bottom_wall" class="wall" onmouseover="intoWall()" onmouseout="outWall()"></div>
+		<div id="center_wall" class="wall" onmouseover="intoWall()" onmouseout="outWall()"></div>
+		<div id="start_grid" onmouseout="throughS()">S</div>
+		<div id="end_grid" onmouseover="throughE()" onmouseout="outE()">E</div>	
+		<div id="cheat1" class="cheat" onmouseover="through1()"></div>	
+		<div id="cheat2" class="cheat" onmouseover="through2()"></div>	
+		<div id="cheat3" class="cheat" onmouseover="through3()"></div>	
+		<div id="cheat4" class="cheat" onmouseover="through4()"></div>	
+		<div id="cheat5" class="cheat" onmouseover="through5()"></div>	
+	</div>
+	<p class="intro">The object of this game is to guide the mouse cursor through the start area and get to the end area.Be sure to avoid the walls:</p>
+	<div id="example_wall" class="wall"></div>
+	<p class="intro">Good luck!</p>
 </body>
 </html>
